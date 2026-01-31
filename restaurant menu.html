@@ -5,46 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>restaurant menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        h1,
-        p {
+        h3 {
+            text-align: right;
+            font-family: "Georgia", serif;
+            font-size: 26px;
+            color: darkred;
+        }
+        
+        .welcome {
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            word-spacing: 6px;
+            font-family: Arial, sans-serif;
         }
         
         table {
+            width: 60%;
+            margin: auto;
             border-collapse: collapse;
         }
         
-        table,
         td,
         th {
-            border: 1px solid black;
+            border: 2px solid black;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: darkblue;
+        }
+        
+        a:hover {
+            color: red;
         }
     </style>
 </head>
 
 <body>
-    <h1> Resturant menu </h1>
-    <h1>Heading 3</h1>
-    <p>Welcome to Delight restaurant! Your table is ready, and so is a memorable dining experience. Get ready for great food and warm hospitality</p>
+    <h3> Delight restaurant </h3>
+    <i class="fa fa-cloud"></i>
+    <i class="fa fa-file"></i>
+    <p class="welcome">
+        Welcome to our delicious food cornerWelcome to Delight restaurant! Your table is ready, and so is a memorable dining experience. Get ready for great food and warm hospitality</p>
     <table>
         <tr>
             <th> Menu items</th>
-            <th> price</th>
+            <th> Price</th>
             <tr>
-                <td> pizza</td>
+                <td> Pizza</td>
                 <td> 200 </td>
             </tr>
             <tr>
-                <td> burger </td>
+                <td> Burger </td>
                 <td> 100 </td>
             </tr>
             <tr>
-                <td> sandwich </td>
+                <td> Sandwich </td>
                 <td> 150 </td>
             </tr>
     </table>
+    <p style="text-align:center; margin-top:20px;">
+        <a href="#">View Full Menu</a>
+    </p>
+
 </body>
+
 
 
 </html>
