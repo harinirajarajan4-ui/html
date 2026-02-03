@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <html>
+
+    <head>
+        <title>Simple Blog Post</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
+            /* Blog container */
+            
+            .blog-post {
+                background-color: orangered;
+                padding: 20px;
+                width: 70%;
+                margin: auto;
+                border: 1px solid #ccc;
+            }
+            /* Author */
+            
+            .author {
+                color: red;
+                font-style: Bold;
+            }
+            /* Paragraph styling */
+            
+            .blog-content p::first-line {
+                font-weight: bold;
+            }
+            
+            .blog-content p::first-letter {
+                font-size: 30px;
+                color: #e74c3c;
+            }
+            /* Quote block */
+            
+            blockquote {
+                margin: 20px 0;
+                padding: 10px;
+                background-color: #eee;
+                font-style: italic;
+                position: relative;
+            }
+            
+            blockquote::before {
+                content: "“ ";
+                font-size: 25px;
+                color: #555;
+            }
+            /* Anchor pseudo-classes */
+            
+            a:link {
+                color: blue;
+            }
+            
+            a:visited {
+                color: purple;
+            }
+            
+            a:hover {
+                color: red;
+                text-decoration: underline;
+            }
+            /* h4 side by side */
+            
+            .headings h4 {
+                display: inline-block;
+                margin-right: 20px;
+            }
+            /* Adjacent sibling selector */
+            
+            h4+h4 {
+                color: green;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="blog-post">
+            <h2>My First Blog Post</h2>
+            <p class="author">By Harini R</p>
+
+            <div class="blog-content">
+                <p>
+                    Blogging is the process of creating, publishing, and consistently updating informational content—such as articles, photos, or videos—on a website, typically in a, conversational, and reverse-chronological format. </p>
+
+                <blockquote>
+                    Writing is the act of creating a persistent representation of language through a system of visible marks, such as letters and symbols
+                </blockquote>
+
+                <p>
+                    Read more articles on
+                    <a href="#">my blog page</a> and explore new content daily.
+                </p>
+            </div>
+
+            <div class="headings">
+                <h4>Articles</h4>
+                <h4>Usefullinks </h4>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
