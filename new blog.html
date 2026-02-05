@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Featured Blog Section</title>
+
+    <style>
+        .blog-section {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        .blog-post {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 30%;
+        }
+        /* Images ending with .jpg */
+        
+        img[src$=".jpg"] {
+            width: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        /* Highlight only https links */
+        
+        a[href^="https"] {
+            color: red;
+            font-weight: bold;
+        }
+        /* Small screens */
+        
+        @media (max-width: 600px) {
+            .blog-section {
+                flex-direction: column;
+            }
+            .blog-post {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+        /* Portrait orientation */
+        
+        @media (orientation: portrait) {
+            .blog-section {
+                background-color: lightyellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="blog-section">
+        <div class="blog-post">
+            <h3>Web Design Trends</h3>
+            <img src="design.jpg" alt="Design Blog">
+            <p>Latest trends in modern web design.</p>
+            <a href="https://example.com">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h3>CSS Tips</h3>
+            <img src="css.jpg" alt="CSS Blog">
+            <p>Useful CSS tricks for beginners.</p>
+            <a href="http://example.org">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h3>JavaScript Basics</h3>
+            <img src="js.jpg" alt="JS Blog">
+            <p>Understanding JavaScript fundamentals.</p>
+            <a href="https://example.net">Read More</a>
+        </div>
+    </section>
+
+</body>
+
+</html>, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
