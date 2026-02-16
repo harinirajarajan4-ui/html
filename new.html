@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* 📱 Mobile Phones */
+        
+        @media (max-width: 767px) {
+            .container {
+                width: 90% height: auto flex-direction: column
+            }
+            .left {
+                display: none;
+            }
+            .right {
+                width: 100%;
+            }
+        }
+        /* 💻 Laptop / Desktop */
+        
+        @media (min-width: 768px) {
+            .container {
+                width: 80%;
+                height: 450px;
+                flex-direction: row;
+            }
+            .left {
+                display: block !important;
+                width: 50% !important;
+            }
+            .right {
+                width: 50% !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0; font-family:Arial, sans-serif; background-color:#eaeaea;">
+
+    <div class="container" style="display:flex; background-color:#ffffff; margin:50px auto;">
+
+        <!-- Left Image Section -->
+        <div class="left-section" style="
+            width:50%;
+            min-height:100vh;
+            float:left;
+            background:linear-gradient(to bottom, #b9c2cc, #f1c7a5);
+        ">
+        </div>
+
+        <!-- Right Login Section -->
+        <div class="right" style="padding:40px; box-sizing:border-box;max-height: auto;">
+
+            <h2 style="color:#b64a2b; margin-bottom:20px;">Login Form</h2>
+
+            <label style="display:block; margin-bottom:5px;">Email :</label>
+            <input type="email" style="width:100%; padding:8px; border:1px solid #ccc; margin-bottom:15px;">
+
+            <label style="display:block; margin-bottom:5px;">Password :</label>
+            <input type="password" style="width:100%; padding:8px; border:1px solid #ccc; margin-bottom:15px;">
+
+            <div style="margin-bottom:20px;">
+                <input type="checkbox"> Remember Me
+            </div>
+
+            <a href="#" style="display:block; text-align:center; padding:10px; background-color:#b64a2b;
+                  color:white; text-decoration:none;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+            Login
+        </a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <html>
+
+    <head>
+
+        <style>
+            /* 📱 Mobile Phones */
+            
+            @media (max-width: 767px) {
+                .container {
+                    width: 90% !important;
+                    height: auto !important;
+                    flex-direction: column !important;
+                }
+                .left {
+                    display: none !important;
+                }
+                .right {
+                    width: 100% !important;
+                }
+            }
+            /* 💻 Laptop / Desktop */
+            
+            @media (min-width: 768px) {
+                .container {
+                    width: 80% !important;
+                    height: auto !important;
+                    flex-direction: row !important;
+                }
+                .left {
+                    display: block !important;
+                    width: 50% !important;
+                    float: left;
+                    min-height: 100mvh;
+                }
+                .right {
+                    width: 50% !important;
+                    float: left;
+                    min-height: 100mvh;
+                }
+            }
+        </style>
+    </head>
+
+    <body style="margin:0; font-family:Arial, sans-serif; background-color:#eaeaea;">
+
+        <div class="container" style="display:flex; background-color:#ffffff; margin:50px auto; ">
+
+            <!-- Left Image Section -->
+            <div class="left" style="background:linear-gradient(#cfd9df, #e2ebf0)" ;>
+            </div>
+
+            <!-- Right Login Section -->
+            <div class=" right " style="padding:40px; box-sizing:border-box; ">
+
+                <h2 style="color:#b64a2b; margin-bottom:20px; ">Login Form</h2>
+
+                <label style="display:block; margin-bottom:5px; ">Email :</label>
+                <input type="email " style="width:100%; padding:8px; border:1px solid #ccc; margin-bottom:15px; ">
+
+                <label style="display:block; margin-bottom:5px; ">Password :</label>
+                <input type="password " style="width:100%; padding:8px; border:1px solid #ccc; margin-bottom:15px; ">
+
+                <div style="margin-bottom:20px; ">
+                    <input type="checkbox "> Remember Me
+                </div>
+
+                <a href="# " style="display:block; text-align:center; padding:10px; background-color:#b64a2b; color:white; text-decoration:none; " onmouseover="this.style.opacity='0.8' " onmouseout="this.style.opacity='1' ">
+            Login
+        </a>
+
+            </div>
+        </div>
+
+    </body>
+
+    </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Media Queries -->
+    <style>
+        @media screen and (min-width: 767px) {
+            .left-section,
+            .right-section {
+                width: 50%;
+                min-height: 100vh;
+                float: left;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .container {
+                width: 90%;
+                height: auto;
+                flex-direction: column !important;
+            }
+            .left-section {
+                display: none !important;
+            }
+            .right-section {
+                width: 100% !important;
+            }
+        }
+    </style>
+    </head>
+
+    <body style="margin:0; font-family:Arial, sans-serif; background-color:#eaeaea;">
+
+        <!-- Outer container -->
+        <div style="width:100%; min-height:100vh;">
+
+            <!-- Left background section -->
+            <div class="left-section" style="
+            width:50%;
+            min-height:100vh;
+            float:left;
+            background:linear-gradient(to bottom, #b9c2cc, #f1c7a5);
+        ">
+            </div>
+
+            <!-- Right login section -->
+            <div class="right-section" style="
+            width:50%;
+            min-height:100vh;
+            float:left;
+            background-color:#ffffff;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        ">
+
+                <!-- Login box -->
+                <div style="width:300px;">
+
+                    <h2 style="color:#a94442; margin-bottom:20px;">
+                        Login Form
+                    </h2>
+
+                    <label style="font-weight:bold;">Email :</label>
+                    <input type="text" style="
+                    width:100%;
+                    padding:8px;
+                    margin-bottom:15px;
+                    border:1px solid #ccc;
+                ">
+
+                    <label style="font-weight:bold;">Password :</label>
+                    <input type="password" style="
+                    width:100%;
+                    padding:8px;
+                    margin-bottom:15px;
+                    border:1px solid #ccc;
+                ">
+
+                    <div style="margin-bottom:15px; font-size:14px;">
+                        <input type="checkbox"> Remember Me
+                    </div>
+
+                    <button style="
+                    width:100%;
+                    padding:10px;
+                    background-color:#c65b57;
+                    color:white;
+                    border:none;
+                    cursor:pointer;
+                ">
+                    Login
+                </button>
+
+                </div>
+            </div>
+
+            <div style="clear:both;"></div>
+
+        </div>
+
+    </body>
+
+</html>
