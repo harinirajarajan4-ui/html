@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script language = "javascript" type = "text/javascript">
+        
+let inputDate = prompt("Enter a past date (YYYY-MM-DD):");
+
+
+let date = new Date(inputDate);
+
+
+let year = date.getFullYear();
+let day = date.getDate();
+
+let months = [
+    "January","February","March","April","May","June",
+    "July","August","September","October","November","December"
+];
+
+let monthName = months[date.getMonth()];
+
+
+let today = new Date();
+let yearsPassed = today.getFullYear() - year;
+
+let monthDiff = today.getMonth() - date.getMonth();
+let dayDiff = today.getDate() - date.getDate();
+
+if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+    yearsPassed--;
+}
+
+// Display date details
+console.log("Year: " + year);
+console.log("Month: " + monthName);
+console.log("Day: " + day);
+console.log("Full years passed: " + yearsPassed);
+
+// Custom message
+if (yearsPassed >= 1) {
+    console.log("It has been more than a year since that date.");
+} else {
+    console.log("It has been less than a year since that date.");
+}
+</script>
+    
+</body>
+</html>
