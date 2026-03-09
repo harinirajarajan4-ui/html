@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+        let a="I think this movie was BAD and 100% Stupid! But the Acting was Amazing and 3 actors were great"
+
+ const bannedWords = /\b(bad|ugly|stupid)\b/gi;
+ let banned = a.replace(bannedWords, "***");
+ console.log(banned)
+ const numberPattern = /\b\d+(\.\d+)?%?\b/g;
+
+// Find all matches
+const matches = a.match(numberPattern);
+
+// Count numbers (if no matches, count is 0)
+const count = matches ? matches.length : 0;
+
+// Output results
+console.log("Numbers found:", matches || []);
+console.log("Total count:", count);
+
+ </script>
+
+    
+</body>
+</html>
