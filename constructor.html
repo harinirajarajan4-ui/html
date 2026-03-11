@@ -1,0 +1,59 @@
+<html lang="en">
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script language = "javascript" type = "text/javascript">
+        class User {
+  constructor(name, age, email) {
+    this.name = name;
+    this.age = age;
+    this.email = email;
+  }
+
+  // Getter for name
+  getName() {
+    return this.name;
+  }
+
+  // Getter for age
+  getAge() {
+    return this.age;
+  }
+
+  // Setter for email with validation
+  setEmail(newEmail) {
+    if (newEmail.includes('@')) {
+      this.email = newEmail;
+      console.log("✅ Email updated successfully.");
+    } else {
+      console.log("❌ Invalid email format. Update failed.");
+    }
+  }
+
+  // Method to display user details
+  displayUser() {
+    console.log(`Name: ${this.getName()}`);
+    console.log(`Age: ${this.getAge()}`);
+    console.log(`Email: ${this.email}`);
+  }
+}
+
+// Create a user object
+const user1 = new User("Alice", 25, "alice@example.com");
+
+// Try updating with incorrect email
+user1.setEmail("aliceexample.com");
+
+// Try updating with correct email
+user1.setEmail("alice.new@example.com");
+
+// Print user details
+user1.displayUser();
+</script>
+</body>
+</html>
