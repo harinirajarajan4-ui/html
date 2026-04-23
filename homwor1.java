@@ -1,0 +1,9 @@
+class shop{
+    public static void main(String[] args) {
+        String item= "soap";
+        int quantity=4;
+        double unitprice=18.75;
+        double totalprice=quantity*unitprice;
+        System.out.println("total price: " + totalprice);
+    }
+}
